@@ -1,17 +1,22 @@
 package com.example;
 
+import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import java.util.List;
 
 public class FelineTest {
 
     @Test
-    public void eatMeat() {
+    public void eatMeatTestCheckMeatList() throws Exception {
+        Feline feline = new Feline();
+        Assert.assertEquals( List.of("Животные", "Птицы", "Рыба"), feline.eatMeat());
     }
 
     @Test
-    public void getFamily() {
+    public void getFamilyTestCheckFelineFamily() {
+        Feline feline = new Feline();
+        Assert.assertEquals("Кошачьи",   feline.getFamily());
     }
 
     @Test

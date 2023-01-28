@@ -6,6 +6,7 @@ import java.util.List;
 public class Lion {
 //Есть грива (да/нет)
     boolean hasMane;
+    //  Класс Lion не должен зависеть от класса Feline. Использован принцип инъекции зависимостей.
     final Feline feline;
     public Lion(String sex, Feline feline) throws Exception {
         this.feline = feline;

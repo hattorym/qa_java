@@ -17,12 +17,12 @@ import static org.junit.Assert.*;
         cat = new Cat(feline);
         }
     @Test
-    public void testGetCatSound() {
+    public void getCatSoundTestShouldReturnCorrectSound() {
         assertEquals("Мяу", cat.getSound());
     }
 
     @Test
-    public void testGetCatFood() throws Exception {
+    public void getCatFoodTestShouldReturnCorrectFood() throws Exception {
         Assert.assertEquals(List.of("Животные", "Птицы", "Рыба"), cat.getFood());
     }
 }

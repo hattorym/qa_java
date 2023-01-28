@@ -1,13 +1,16 @@
 package com.example;
 
+import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class LionTest {
 
     @Test
-    public void getKittens() {
+    public void getKittensTest() throws Exception {
+        Feline feline = new Feline();
+        Lion lion = new Lion("Самка", feline);
+        int kittens =  lion.getKittens();
+        Assert.assertEquals(1, kittens);
     }
 
     @Test
